@@ -1,8 +1,8 @@
 # day1.py
-from file_utils import read_file_to_array
+from util.file_utils import read_file_to_array
 
 # Example usage
-file_path = 'day1.txt'
+file_path = 'day01.txt'
 array = read_file_to_array(file_path)
 
 left_list = []
@@ -39,10 +39,8 @@ for i in range(len(left_list)):
     if left_list_instances.get(value):
         exit
     else:    
-        left_list_instances[value] = 0
-        for j in range(len(right_list)):
-            if value == right_list[j]:
-                left_list_instances[value] += 1
+        left_list_instances[value] = right_list.count(value)
+        
 
 print("Left list instances:", left_list_instances)
 
