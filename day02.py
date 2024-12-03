@@ -5,7 +5,7 @@ from util.print_status import print_status
 from util.colorize import colorize
 # Read data
 
-file_path = 'day02.txt'
+file_path = 'day02-test.txt'
 reports = read_file_to_array(file_path)
 
 def direction(level, previous_level):
