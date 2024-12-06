@@ -23,7 +23,6 @@ directions = [
 ]
 
 for line_index in range(len(lines)):
-
     for char_index in range(len(lines[line_index])):
         if (lines[line_index][char_index] == pattern[0]):
             # in each direction
